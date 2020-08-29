@@ -1,75 +1,26 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
-
+import "./App.css";
+import "./style.css";
+import go from "./go.png";
 function App() {
   return (
     <div className="App">
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" />
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress"
-            placeholder="1234 Main St"
-          />
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress2"
-            placeholder="Apartment, studio, or floor"
-          />
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity" />
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip" />
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="formControlRange">Example Range input</label>
-          <input
-            type="range"
-            class="form-control-range"
-            id="formControlRange"
-          />
-        </div>
-        <button type="submit" class="btn btn-primary">
-          Sign in
-        </button>
-      </form>
+      <div
+        style={{
+          border: "solid 1px black",
+          maxwidth: "100px",
+        }}
+      >
+        <h1 className="title"> Hello world! </h1>
+
+        <img src={go} />
+
+        <img src="/public.png" />
+      </div>
+
+      <video width="320" height="240" controls />
+
+      <source src="/src/GMC.mp4" type="video/mp4" />
     </div>
   );
 }
